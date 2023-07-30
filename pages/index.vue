@@ -41,7 +41,7 @@
   align-items: center;
   justify-content: center;
   font-family: "Tilt Warp";
-  background: #ff0088;
+  background: #f08;
   font-size: 2.5em;
   height: 3em;
   user-select: none;
@@ -53,6 +53,10 @@
 
   @media (max-width: 700px) {
     font-size: 1.2em;
+  }
+
+  @media (max-width: 430px) {
+    font-size: 1.1em;
   }
 
   .content {
