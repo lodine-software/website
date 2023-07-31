@@ -13,26 +13,25 @@
         id="safebrowsing-card"
         name="SafeBrowsing"
         description="A storage of flagged potential malicious, phishing or suspicious websites"
-        links="docs.lodine.xyz/safebrowsing"
+        links="docs.lodine.xyz/docs/safebrowsing/api"
       />
     </div>
   </section>
   <section>
     <h1 id="about">About Us</h1>
     <p>
-      We're self-funded tech building company based in the Kazakhstan.
-      Lodine is established in 2021, firstly we are planned to create
-      only games, but nearly to 2023 our plans changed, now we want
-      create not only games but also an apps & software products.
-      We want that people love our products and our products will be
-      high-quality, modern and "other cool words".
+      We're self-funded tech building company based in the Kazakhstan. Lodine is
+      established in 2021, firstly we are planned to create only games, but
+      nearly to 2023 our plans changed, now we want create not only games but
+      also an apps & software products. We want that people love our products
+      and our products will be high-quality, modern and "other cool words".
     </p>
   </section>
   <section>
     <h1 id="contact">Contact Us</h1>
     <p>
-      You are free to contact our Tech Support using our email (support@lodine.freshworks.com)
-      or by mentioning us on X (@ldnsoft)
+      You are free to contact our Tech Support using our email
+      (support@lodine.freshworks.com) or by mentioning us on X (@ldnsoft)
     </p>
   </section>
 </template>
@@ -147,6 +146,11 @@ section:not(.page-header) {
   flex-direction: row;
   gap: 2em;
   margin-top: 1em;
+
+  @media (max-width: 900px) {
+    flex-direction: column;
+    gap: 1em;
+  }
 }
 
 #safebrowsing-card {

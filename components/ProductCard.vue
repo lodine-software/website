@@ -69,6 +69,7 @@ export default {
     color: #9e9e9e;
     transition: 1000ms;
     overflow: hidden;
+    text-align: center;
     z-index: 1;
   }
 
@@ -96,7 +97,6 @@ export default {
     .product-description {
       visibility: visible;
       height: 100%;
-      text-align: center;
       overflow: scroll;
     }
   }
