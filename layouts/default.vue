@@ -25,8 +25,9 @@
             <span class="title">Social</span>
             <div class="social-buttons">
               <a
-                href="https://twitter.com/ldnsoft"
+                href="https://x.com/ldnsoft"
                 target="_blank"
+                rel="noreferrer noopener"
                 class="button"
               >
                 <NuxtIcon name="twitter" filled />
@@ -34,6 +35,7 @@
               <a
                 href="https://youtube.com/@colsoftofficial"
                 target="_blank"
+                rel="noreferrer noopener"
                 class="button"
               >
                 <NuxtIcon name="youtube" filled />
@@ -41,6 +43,7 @@
               <a
                 href="https://instagram.com/ldnsoft"
                 target="_blank"
+                rel="noreferrer noopener"
                 class="button"
               >
                 <NuxtIcon name="instagram" filled />
