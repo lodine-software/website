@@ -1,5 +1,5 @@
 <template>
-  <a :href="to" class="external-link" target="_blank" ref="noopener noreferer">
+  <a :href="to" class="external-link" target="_blank" rel="noopener noreferer">
     <span>
       <slot />
     </span>

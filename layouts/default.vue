@@ -3,7 +3,7 @@
     <nav>
       <div class="inner">
         <NuxtLink to="/" class="logo">
-          <img src="~/assets/images/textlogo.svg" alt="">
+          <img src="~/assets/images/textlogo.svg" alt="" />
         </NuxtLink>
         <div class="links">
           <NuxtLink to="#about">about</NuxtLink>
@@ -18,36 +18,35 @@
     <footer>
       <div class="inner">
         <div class="logo">
-          <img src="~/assets/images/logo.svg" alt="">
+          <img src="~/assets/images/logo.svg" alt="" />
         </div>
         <div class="columns">
           <div class="column">
+            <span class="title">Resources</span>
+            <ExternalLink
+              to="https://lodine.freshdesk.com/support/tickets/new"
+              hide-icon>
+              Contact Us
+            </ExternalLink>
+          </div>
+          <div class="column">
+            <span class="title">Documentation</span>
+            <ExternalLink to="https://docs.lodine.xyz/docs/safebrowsing/api" hide-icon>
+              Safebrowsing API
+            </ExternalLink>
+          </div>
+          <div class="column">
             <span class="title">Social</span>
             <div class="social-buttons">
-              <a
-                href="https://x.com/ldnsoft"
-                target="_blank"
-                rel="noreferrer noopener"
-                class="button"
-              >
+              <SocialButton to="https://x.com/ldnsoft">
                 <NuxtIcon name="twitter" filled />
-              </a>
-              <a
-                href="https://youtube.com/@colsoftofficial"
-                target="_blank"
-                rel="noreferrer noopener"
-                class="button"
-              >
+              </SocialButton>
+              <SocialButton to="https://youtube.com/@ldnsoft">
                 <NuxtIcon name="youtube" filled />
-              </a>
-              <a
-                href="https://instagram.com/ldnsoft"
-                target="_blank"
-                rel="noreferrer noopener"
-                class="button"
-              >
+              </SocialButton>
+              <SocialButton to="https://instagram.com/ldnsoft">
                 <NuxtIcon name="instagram" filled />
-              </a>
+              </SocialButton>
             </div>
           </div>
         </div>
