@@ -12,7 +12,8 @@
       <ProductCard
         id="safebrowsing-card"
         name="SafeBrowsing"
-        description="A storage of flagged potential malicious, phishing or suspicious websites "
+        description="A storage of flagged potential malicious, phishing or suspicious websites"
+        links="docs.lodine.xyz/safebrowsing"
       />
     </div>
   </section>

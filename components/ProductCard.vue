@@ -5,17 +5,24 @@
     </div>
     <div class="product-description">
       <span>{{ description }}</span>
+      <div class="product-links">
+        <ExternalLink v-for="link in links.split(';')" :to="'https://' + link">{{link}}</ExternalLink>
+      </div>
     </div>
     <div class="overlay"></div>
   </div>
 </template>
 
 <script>
+import ExternalLink from './ExternalLink.vue';
+
 export default {
-  props: {
-    name: String,
-    description: String,
-  },
+    props: {
+        name: String,
+        description: String,
+        links: String
+    },
+    components: { ExternalLink }
 }
 </script>
 
@@ -63,6 +70,10 @@ export default {
     transition: 1000ms;
     overflow: hidden;
     z-index: 1;
+  }
+
+  .product-links {
+    margin-top: 1em;
   }
 
   .overlay {
