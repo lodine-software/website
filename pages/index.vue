@@ -20,7 +20,7 @@
   <section>
     <h1 id="about">About Us</h1>
     <p>
-      We're self-funded tech building company based in the Kazakhstan. Lodine is
+      We're self-funded tech company based in the Kazakhstan. Lodine is
       established in 2021, firstly we are planned to create only games, but
       nearly to 2023 our plans changed, now we want create not only games but
       also an apps & software products. We want that people love our products
