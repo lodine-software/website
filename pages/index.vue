@@ -11,9 +11,9 @@
     <div class="product-cards">
       <ProductCard
         id="safebrowsing-card"
-        name="SafeBrowsing"
+        name="Safebrowsing"
         description="A storage of flagged potential malicious, phishing or suspicious websites"
-        links="docs.lodine.xyz/docs/safebrowsing/api"
+        links="docs.lodine.xyz/docs/products/safebrowsing/api"
       />
     </div>
   </section>
