@@ -3,7 +3,7 @@ export default defineNuxtConfig({
     head: {
       title: "Lodine",
       link: [
-        { rel: "shortcut icon", type: "image/x-icon", href: "favicon.ico" },
+        { rel: "shortcut icon", type: "image/x-icon", href: "/favicon.ico" },
       ],
       meta: [
         { name: "description", content: "Self-funded Tech Company based in the Kazakhstan" },
