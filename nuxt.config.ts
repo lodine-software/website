@@ -2,6 +2,7 @@ export default defineNuxtConfig({
   app: {
     head: {
       title: "Lodine",
+      titleTemplate: "%s / Lodine",
       link: [
         { rel: "shortcut icon", type: "image/x-icon", href: "/favicon.ico" },
       ],

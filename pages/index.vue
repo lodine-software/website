@@ -157,3 +157,9 @@ section:not(.page-header) {
   background: url("~/assets/products/safebrowsing/background.jpeg");
 }
 </style>
+
+<script setup>
+useHead({
+  title: "Homepage"
+})
+</script>
