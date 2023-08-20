@@ -14,7 +14,7 @@ export default defineNuxtConfig({
     },
   },
   css: ["~/assets/styles/global.scss"],
-  modules: ["@nuxtjs/google-fonts", "nuxt-security", "nuxt-icons"],
+  modules: ["@nuxtjs/google-fonts", "nuxt-icons"],
   googleFonts: {
     families: {
       Lexend: true,
