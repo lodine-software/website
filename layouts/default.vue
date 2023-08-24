@@ -38,14 +38,14 @@
           <div class="column">
             <span class="title">Social</span>
             <div class="social-buttons">
-              <SocialButton to="https://x.com/ldnsoft">
-                <NuxtIcon name="twitter" filled />
+              <SocialButton to="https://x.com/lodine_software">
+                <NuxtIcon name="x" />
               </SocialButton>
               <SocialButton to="https://youtube.com/@ldnsoft">
-                <NuxtIcon name="youtube" filled />
+                <NuxtIcon name="youtube" />
               </SocialButton>
               <SocialButton to="https://instagram.com/ldnsoft">
-                <NuxtIcon name="instagram" filled />
+                <NuxtIcon name="instagram" />
               </SocialButton>
             </div>
           </div>
