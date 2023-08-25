@@ -19,6 +19,7 @@
       <div class="inner">
         <div class="logo">
           <img src="~/assets/images/logo.svg" alt="" />
+          <span>{{ $config.public.branch }}@{{ $config.public.hash }}</span>
         </div>
         <div class="columns">
           <div class="column">
@@ -31,7 +32,9 @@
           </div>
           <div class="column">
             <span class="title">Documentation</span>
-            <ExternalLink to="https://docs.lodine.xyz/docs/safebrowsing/api" hide-icon>
+            <ExternalLink
+              to="https://docs.lodine.xyz/docs/safebrowsing/api"
+              hide-icon>
               Safebrowsing API
             </ExternalLink>
           </div>
@@ -135,9 +138,13 @@ footer {
     padding: 2.5em 1em;
 
     .logo {
-      font-size: 1.5em;
+      display: flex;
       user-select: none;
       pointer-events: none;
+
+      @media (max-width: 700px) {
+        flex-direction: column;
+      }
 
       img {
         height: 90px;
