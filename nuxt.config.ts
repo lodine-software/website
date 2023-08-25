@@ -23,7 +23,7 @@ export default defineNuxtConfig({
   runtimeConfig: {
     public: {
       branch: process.env.CF_PAGES_BRANCH || "main?",
-      hash: process.env.CF_PAGES_COMMIT_SHA || "unknown",
+      hash: process.env.CF_PAGES_COMMIT_SHA?.substring(0, 7) || "unknown",
     },
   },
   css: ["~/assets/styles/global.scss"],
