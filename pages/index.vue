@@ -1,20 +1,8 @@
 <template>
-  <Section size="big" class="page-header">
+  <section class="page-header">
     <div class="content">
-      <h1>Self-funded Tech Company</h1>
-      <h1>Self-funded Tech Company</h1>
-    </div>
-  </Section>
-
-  <section>
-    <h1 id="products">Our Products</h1>
-    <div class="product-cards">
-      <ProductCard
-        id="safebrowsing-card"
-        name="Safebrowsing"
-        description="A storage of flagged potential malicious, phishing or suspicious websites"
-        links="docs.lodine.xyz/docs/products/safebrowsing/api"
-      />
+      <h1>Lodine</h1>
+      <h1>Lodine</h1>
     </div>
   </section>
   <section>
@@ -38,26 +26,15 @@
 
 <style lang="scss" scoped>
 .page-header {
+  display: flex;
   align-items: center;
   justify-content: center;
   font-family: "Tilt Warp";
   background: #f08;
-  font-size: 2.5em;
-  height: 3em;
+  font-size: 3em;
+  height: 5em;
   user-select: none;
   transition: 200ms;
-
-  @media (max-width: 900px) {
-    font-size: 2em;
-  }
-
-  @media (max-width: 700px) {
-    font-size: 1.2em;
-  }
-
-  @media (max-width: 430px) {
-    font-size: 1.1em;
-  }
 
   .content {
     display: flex;
@@ -139,22 +116,6 @@ section:not(.page-header) {
     font-size: 1.2em;
     line-height: 1.5em;
   }
-}
-
-.product-cards {
-  display: flex;
-  flex-direction: row;
-  gap: 2em;
-  margin-top: 1em;
-
-  @media (max-width: 900px) {
-    flex-direction: column;
-    gap: 1em;
-  }
-}
-
-#safebrowsing-card {
-  background: url("~/assets/products/safebrowsing/background.jpeg");
 }
 </style>
 

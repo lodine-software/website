@@ -19,36 +19,22 @@
       <div class="inner">
         <div class="logo">
           <img src="~/assets/images/logo.svg" alt="" />
-          <span>{{ $config.public.branch }}@{{ $config.public.hash }}</span>
         </div>
         <div class="columns">
           <div class="column">
             <span class="title">Resources</span>
-            <ExternalLink
-              to="https://lodine.freshdesk.com/support/tickets/new"
-              hide-icon>
-              Contact Us
+            <ExternalLink to="https://status.lodine.xyz" hide-icon>
+              Status
             </ExternalLink>
           </div>
           <div class="column">
-            <span class="title">Documentation</span>
-            <ExternalLink
-              to="https://docs.lodine.xyz/docs/safebrowsing/api"
-              hide-icon>
-              Safebrowsing API
-            </ExternalLink>
-          </div>
-          <div class="column">
-            <span class="title">Social</span>
+            <span class="title">Community</span>
             <div class="social-buttons">
               <SocialButton to="https://x.com/lodine_software">
                 <NuxtIcon name="x" />
               </SocialButton>
-              <SocialButton to="https://youtube.com/@ldnsoft">
-                <NuxtIcon name="youtube" />
-              </SocialButton>
-              <SocialButton to="https://instagram.com/ldnsoft">
-                <NuxtIcon name="instagram" />
+              <SocialButton to="https://github.com/lodine-software">
+                <NuxtIcon name="github" />
               </SocialButton>
             </div>
           </div>
@@ -142,10 +128,6 @@ footer {
       user-select: none;
       pointer-events: none;
 
-      @media (max-width: 700px) {
-        flex-direction: column;
-      }
-
       img {
         height: 90px;
         filter: grayscale(1);
@@ -159,11 +141,16 @@ footer {
       .column {
         display: flex;
         flex-direction: column;
+        color: #1d1d1d;
+        gap: 0.5em;
 
         .title {
-          color: #555;
+          color: #000;
           font-size: 1.2em;
-          margin-bottom: 1em;
+        }
+
+        a:hover {
+          text-decoration: underline;
         }
 
         .social-buttons {
