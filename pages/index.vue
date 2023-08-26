@@ -122,5 +122,5 @@ section:not(.page-header) {
 <script setup>
 useHead({
   title: "Homepage",
-});
+})
 </script>

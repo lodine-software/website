@@ -38,4 +38,4 @@ export default defineNuxtConfig({
       "Tilt+Warp": true,
     },
   },
-});
+})

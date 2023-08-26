@@ -12,7 +12,7 @@ export default {
     size: String,
     image: String,
   },
-};
+}
 </script>
 
 <style lang="scss" scoped>

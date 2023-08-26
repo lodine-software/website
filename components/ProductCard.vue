@@ -18,7 +18,7 @@
 </template>
 
 <script>
-import ExternalLink from "./ExternalLink.vue";
+import ExternalLink from "./ExternalLink.vue"
 
 export default {
   props: {
@@ -27,7 +27,7 @@ export default {
     links: String,
   },
   components: { ExternalLink },
-};
+}
 </script>
 
 <style lang="scss" scoped>
