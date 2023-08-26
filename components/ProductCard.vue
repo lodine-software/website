@@ -6,7 +6,11 @@
     <div class="product-description">
       <span>{{ description }}</span>
       <div class="product-links">
-        <ExternalLink v-for="link in links.split(';')" :to="'https://' + link">{{link}}</ExternalLink>
+        <ExternalLink
+          v-for="link in links.split(';')"
+          :to="'https://' + link"
+          >{{ link }}</ExternalLink
+        >
       </div>
     </div>
     <div class="overlay"></div>
@@ -14,16 +18,16 @@
 </template>
 
 <script>
-import ExternalLink from './ExternalLink.vue';
+import ExternalLink from "./ExternalLink.vue";
 
 export default {
-    props: {
-        name: String,
-        description: String,
-        links: String
-    },
-    components: { ExternalLink }
-}
+  props: {
+    name: String,
+    description: String,
+    links: String,
+  },
+  components: { ExternalLink },
+};
 </script>
 
 <style lang="scss" scoped>

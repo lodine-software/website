@@ -11,16 +11,16 @@
 export default {
   props: {
     to: String,
-    hideIcon: Boolean
-  }
-}
+    hideIcon: Boolean,
+  },
+};
 </script>
 
 <style lang="scss" scoped>
 .external-link {
   display: inline-flex;
   align-items: center;
-  gap: .3em;
+  gap: 0.3em;
   color: inherit;
   text-decoration: none;
 }
