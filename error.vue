@@ -31,9 +31,9 @@ section {
 </style>
 
 <script setup>
-const error = useError();
+const error = useError()
 
 useHead({
   title: "An error occured!",
-});
+})
 </script>

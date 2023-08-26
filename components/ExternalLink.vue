@@ -13,7 +13,7 @@ export default {
     to: String,
     hideIcon: Boolean,
   },
-};
+}
 </script>
 
 <style lang="scss" scoped>
