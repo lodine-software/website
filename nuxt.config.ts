@@ -1,8 +1,11 @@
 export default defineNuxtConfig({
   app: {
     head: {
+      htmlAttrs: {
+        lang: "en",
+      },
       title: "Lodine",
-      titleTemplate: "%s / Lodine",
+      titleTemplate: "%s - Lodine",
       link: [
         { rel: "shortcut icon", type: "image/x-icon", href: "/favicon.ico" },
       ],
@@ -22,7 +25,7 @@ export default defineNuxtConfig({
   },
   runtimeConfig: {
     public: {
-      branch: process.env.CF_PAGES_BRANCH || "main?",
+      branch: process.env.CF_PAGES_BRANCH || "main",
       hash: process.env.CF_PAGES_COMMIT_SHA?.substring(0, 7) || "unknown",
     },
   },
