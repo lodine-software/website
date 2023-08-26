@@ -17,7 +17,8 @@ section {
   max-width: 1000px;
   margin: auto;
 
-  h1,h2 {
+  h1,
+  h2 {
     margin: 0;
     font-size: 2em;
   }
@@ -33,6 +34,6 @@ section {
 const error = useError();
 
 useHead({
-  title: "An error occured!"
-})
+  title: "An error occured!",
+});
 </script>

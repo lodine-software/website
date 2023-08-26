@@ -10,9 +10,9 @@
 export default {
   props: {
     size: String,
-    image: String
-  }
-}
+    image: String,
+  },
+};
 </script>
 
 <style lang="scss" scoped>

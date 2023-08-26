@@ -1,0 +1,12 @@
+name: Prettier
+on: [pull_request]
+jobs:
+  prettier-check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node_version: 18
+      - run: npm install
+      - run: npx prettier . --check
