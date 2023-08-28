@@ -1,28 +1,9 @@
 <template>
   <section class="banner">
     <div class="content">
-      <h1>Lodine</h1>
-      <h1>Lodine</h1>
+      <h1>Legal</h1>
+      <h1>Legal</h1>
     </div>
-  </section>
-  <section>
-    <h1 id="about">About</h1>
-    <p>
-      Lodine is a small independent software development company based in the
-      Kazakhstan, founded in 2022. All our software is free to use and does not
-      contain any unwanted software
-    </p>
-  </section>
-  <section>
-    <h1 id="products">Products</h1>
-    <p>No available software</p>
-  </section>
-  <section>
-    <h1 id="contact">Contact</h1>
-    <p>
-      You are free to contact our Tech Support using our email
-      (support@lodine.freshworks.com) or by mentioning us on X (@ldnsoft)
-    </p>
   </section>
 </template>
 
@@ -123,6 +104,6 @@ section:not(:nth-child(1)) {
 
 <script setup>
 useHead({
-  title: "Home",
+  title: "Legal",
 })
 </script>
