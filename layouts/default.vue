@@ -29,14 +29,12 @@
           </div>
           <div class="column">
             <span class="title">Community</span>
-            <div class="social-buttons">
-              <SocialButton to="https://x.com/lodine_software">
-                <NuxtIcon name="x" />
-              </SocialButton>
-              <SocialButton to="https://github.com/lodine-software">
-                <NuxtIcon name="github" />
-              </SocialButton>
-            </div>
+            <ExternalLink to="https://x.com/lodine_software" hide-icon>
+              Twitter
+            </ExternalLink>
+            <ExternalLink to="https://github.com/lodine-software" hide-icon>
+              GitHub
+            </ExternalLink>
           </div>
         </div>
       </div>
@@ -136,7 +134,7 @@ footer {
 
     .columns {
       display: flex;
-      gap: 7em;
+      gap: 3em;
 
       .column {
         display: flex;
@@ -151,11 +149,6 @@ footer {
 
         a:hover {
           text-decoration: underline;
-        }
-
-        .social-buttons {
-          display: flex;
-          gap: 0.5em;
         }
       }
 
