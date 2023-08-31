@@ -33,6 +33,7 @@ export default defineNuxtConfig({
   modules: ["@nuxtjs/google-fonts", "nuxt-icons"],
   googleFonts: {
     families: {
+      Inter: true,
       Lexend: true,
       "JetBrains+Mono": true,
       "Tilt+Warp": true,
