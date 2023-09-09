@@ -35,6 +35,12 @@
             <ExternalLink to="https://github.com/lodine-software" hide-icon>
               GitHub
             </ExternalLink>
+            <ExternalLink to="https://discord.gg/wSj4yNAU53" hide-icon>
+              Discord
+            </ExternalLink>
+            <ExternalLink to="https://bsky.app/profile/lodine.xyz" hide-icon>
+              Bluesky
+            </ExternalLink>
           </div>
         </div>
       </div>
