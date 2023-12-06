@@ -1,6 +1,6 @@
 <template>
   <div class="layout">
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <nav class="navbar navbar-expand-lg sticky-top bg-body-tertiary">
       <div class="container">
         <NuxtLink to="/" class="navbar-brand">
           <img
@@ -21,7 +21,7 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item">
               <NuxtLink to="/" class="nav-link" active-class="active"
