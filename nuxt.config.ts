@@ -2,7 +2,7 @@ export default defineNuxtConfig({
   app: {
     head: {
       title: "Lodine Software",
-      titleTemplate: "%s | Lodine Software",
+      titleTemplate: "%s / Lodine Software",
       link: [
         {
           rel: "stylesheet",

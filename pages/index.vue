@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1>About Us</h1>
+    <h1>About</h1>
     <p>
       Lodine Software is making software and games since 2022, we listen to our
       community! At this moment we released one product and game. We always try
