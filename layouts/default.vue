@@ -56,7 +56,9 @@
             class="mt-2 pe-none"
           />
           <div class="d-flex flex-column">
-            <span>Lodine Software © 2021 - {{ new Date().getFullYear() }}</span>
+            <span
+              >Lodine Software © 2021 - {{ new Date().getFullYear() }}</span
+            >
             <ul class="d-flex list-unstyled text-secondary gap-1">
               <li><NuxtLink to="/legal/privacy">Privacy Policy</NuxtLink></li>
               <span class="user-select-none"> /</span>

@@ -9,6 +9,6 @@
 const error = useError()
 
 useHead({
-  title: "Oops, error!"
+  title: "Oops, error!",
 })
 </script>
