@@ -21,7 +21,10 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNav"
+        >
           <ul class="navbar-nav">
             <li class="nav-item">
               <NuxtLink to="/" class="nav-link" active-class="active"
@@ -42,7 +45,7 @@
         </div>
       </div>
     </nav>
-    <main class="container pt-2"><slot /></main>
+    <main><slot /></main>
     <footer class="footer bg-body-tertiary pt-1 pb-1">
       <div class="container d-flex align-items-center justify-content-between">
         <div class="d-flex gap-2">

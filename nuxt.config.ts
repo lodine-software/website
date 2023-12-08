@@ -3,6 +3,13 @@ export default defineNuxtConfig({
     head: {
       title: "Lodine Software",
       titleTemplate: "%s / Lodine Software",
+      meta: [
+        {
+          name: "description",
+          content:
+            "Official website of Lodine Software. Here you can find trusted information, get in touch with team, get answers to your questions",
+        },
+      ],
       link: [
         {
           rel: "stylesheet",
@@ -29,6 +36,8 @@ export default defineNuxtConfig({
   },
   modules: ["nuxt-icons", "@nuxtjs/color-mode"],
   colorMode: {
+    preference: "light",
     dataValue: "bs-theme",
   },
+  css: ["~/assets/css/custom.css"],
 })

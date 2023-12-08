@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="container">
     <h1>Products</h1>
     <p>List of available products</p>
     <div class="list-group">
@@ -20,7 +20,7 @@
         href="https://github.com/lodine-software/imagetool"
         target="_blank"
         class="list-group-item list-group-item-action"
-        >ImageTool -  A useful image resize tool for Windows 
+        >ImageTool - A useful image resize tool for Windows
       </a>
     </div>
   </div>
@@ -29,5 +29,10 @@
 <script setup>
 useHead({
   title: "Products",
+})
+
+useSeoMeta({
+  description:
+    "List of products that are released by Lodine Software or it contibutors",
 })
 </script>

@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="container">
     <h1>Privacy Policy</h1>
 
     <p><em>Last Updated: December 6, 2023</em></p>

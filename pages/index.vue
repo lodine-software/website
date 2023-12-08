@@ -1,12 +1,31 @@
 <template>
-  <div>
-    <h1>About</h1>
-    <p>
-      Lodine Software is making software and games since 2022, we listen to our
-      community! At this moment we released one product and game. We always try
-      to make high-quality products and games, contact us if you have any
-      questions
-    </p>
+  <div
+    class="d-flex align-items-center text-center text-white bg-primary w-100 h-100"
+  >
+    <div class="container">
+      <h1 class="fw-bold">We're Lodine Software!</h1>
+      <h5>A video game publisher and software developer</h5>
+      <div class="d-inline-flex gap-2 mt-2">
+        <a
+          href="https://go.lodine.xyz/twitter"
+          target="_blank"
+          class="btn btn-light"
+          >Twitter</a
+        >
+        <a
+          href="https://go.lodine.xyz/instagram"
+          target="_blank"
+          class="btn btn-light"
+          >Instagram</a
+        >
+        <a
+          href="https://go.lodine.xyz/itch"
+          target="_blank"
+          class="btn btn-light"
+          >Itch.io</a
+        >
+      </div>
+    </div>
   </div>
 </template>
 
