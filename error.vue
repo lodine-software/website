@@ -1,7 +1,9 @@
 <template>
   <NuxtLayout>
-    <h1>{{ error.statusCode }}</h1>
-    <p>{{ error.statusMessage }}</p>
+    <div class="container">
+      <h1>{{ error.statusCode }}</h1>
+      <p>{{ error.statusMessage }}</p>
+    </div>
   </NuxtLayout>
 </template>
 

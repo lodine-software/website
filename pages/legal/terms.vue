@@ -2,11 +2,11 @@
   <div class="container">
     <h1>Terms of Use</h1>
 
-    <p><em>Last Updated: December 6, 2023</em></p>
+    <p><em>Last Updated: December 11, 2023</em></p>
 
     <p>
-      By accessing and using this our products and services, you agree to be
-      bound by these Terms of Use. If you do not agree to these terms, please
+      By accessing this website, using our products and services, you agree to
+      be bound by these Terms of Use. If you do not agree to these terms, please
       refrain from using our services.
     </p>
 
@@ -17,6 +17,14 @@
       license to use our services for your personal, non-commercial use. You
       agree not to use the services for any illegal or unauthorized purpose and
       to comply with all applicable laws and regulations.
+    </p>
+
+    <h4>Community Guidelines</h4>
+    <p>
+      In addition to these Terms of Use, users are required to follow Community Guidelines.
+      Failure to comply with the Community Guidelines may result in termination
+      or suspension of your access to our services. The Community Guidelines can
+      be found <NuxtLink to="/community/guidelines">here</NuxtLink>.
     </p>
 
     <h4>Limitation of Liability</h4>
