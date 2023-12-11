@@ -21,10 +21,11 @@
 
     <h4>Community Guidelines</h4>
     <p>
-      In addition to these Terms of Use, users are required to follow Community Guidelines.
-      Failure to comply with the Community Guidelines may result in termination
-      or suspension of your access to our services. The Community Guidelines can
-      be found <NuxtLink to="/community/guidelines">here</NuxtLink>.
+      In addition to these Terms of Use, users are required to follow Community
+      Guidelines. Failure to comply with the Community Guidelines may result in
+      termination or suspension of your access to our services. The Community
+      Guidelines can be found
+      <NuxtLink to="/community/guidelines">here</NuxtLink>.
     </p>
 
     <h4>Limitation of Liability</h4>

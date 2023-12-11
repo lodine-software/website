@@ -64,7 +64,11 @@
               <span class="user-select-none"> /</span>
               <li><NuxtLink to="/legal/terms">Terms of Use</NuxtLink></li>
               <span class="user-select-none"> /</span>
-              <li><NuxtLink to="/community/guidelines">Community Guidelines</NuxtLink></li>
+              <li>
+                <NuxtLink to="/community/guidelines"
+                  >Community Guidelines</NuxtLink
+                >
+              </li>
             </ul>
           </div>
         </div>
