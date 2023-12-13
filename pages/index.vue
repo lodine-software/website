@@ -4,7 +4,7 @@
   >
     <div class="container">
       <h1 class="fw-bold">We're Lodine Software!</h1>
-      <h5>A video game publisher and software developer</h5>
+      <h4>A self-funded software company</h4>
       <div class="d-inline-flex gap-2 mt-2">
         <a
           href="https://go.lodine.xyz/twitter"
