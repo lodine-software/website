@@ -8,6 +8,14 @@
             alt="Lodine"
             width="120"
             class="d-inline-block align-text-top"
+            v-if="colorMode.value == 'light'"
+          />
+          <img
+            src="~/assets/images/brand/wordmark_light.svg"
+            alt="Lodine"
+            width="120"
+            class="d-inline-block align-text-top"
+            v-if="colorMode.value == 'dark'"
           />
         </NuxtLink>
         <button
