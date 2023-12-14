@@ -8,10 +8,3 @@
   --bs-link-hover-color: #ff3da4;
   --bs-link-hover-color-rgb: 255, 61, 164;
 }
-
-[data-bs-theme="dark"] {
-  --bs-body-bg: #0f0f0f;
-  --bs-body-bg-rgb: 15, 15, 15;
-  --bs-tertiary-bg: #161616;
-  --bs-tertiary-bg-rgb: 22, 22, 22;
-}

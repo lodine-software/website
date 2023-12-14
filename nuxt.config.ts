@@ -34,10 +34,6 @@ export default defineNuxtConfig({
       ],
     },
   },
-  modules: ["nuxt-icons", "@nuxtjs/color-mode"],
-  colorMode: {
-    preference: "light",
-    dataValue: "bs-theme",
-  },
+  modules: ["nuxt-icons"],
   css: ["~/assets/css/custom.css"],
 })
