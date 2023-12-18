@@ -2,6 +2,10 @@
   <div
     class="banner d-flex align-items-center text-center text-white w-100 h-100"
   >
+    <NuxtImg
+      class="bg pe-none user-select-none"
+      src="/images/landing/landing-bg.webp"
+    />
     <div class="inner w-100 py-3">
       <div class="container">
         <h1 class="fw-bold">We're Lodine Software!</h1>
@@ -33,8 +37,13 @@
 
 <style lang="scss" scoped>
 .banner {
-  background: url("assets/images/landing/landing-bg.webp");
-  background-size: cover;
+  position: relative;
+  .bg {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    object-fit: cover;
+  }
 
   .inner {
     background: rgba($color: #000000, $alpha: 0.8);

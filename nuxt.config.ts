@@ -34,6 +34,9 @@ export default defineNuxtConfig({
       ],
     },
   },
-  modules: ["nuxt-icons"],
+  modules: ["nuxt-icons", "@nuxt/image"],
+  image: {
+    dir: "assets",
+  },
   css: ["~/assets/css/custom.css"],
 })
