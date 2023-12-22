@@ -39,19 +39,6 @@
 <style lang="scss" scoped>
 .banner {
   position: relative;
-  img {
-    animation: 1.5s fade-in;
-  }
-
-  @keyframes fade-in {
-    0% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
-  }
-
   .bg {
     width: 100%;
     height: 100%;
