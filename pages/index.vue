@@ -2,9 +2,10 @@
   <div
     class="banner d-flex align-items-center text-center text-white w-100 h-100"
   >
-    <NuxtImg
+    <img
       class="bg pe-none user-select-none"
-      src="/images/landing/landing-bg.webp"
+      src="~/assets/images/landing/landing-bg.webp"
+      alt=""
     />
     <div class="inner w-100 py-3">
       <div class="container">
@@ -38,6 +39,19 @@
 <style lang="scss" scoped>
 .banner {
   position: relative;
+  img {
+    animation: 1.5s fade-in;
+  }
+
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
   .bg {
     width: 100%;
     height: 100%;
