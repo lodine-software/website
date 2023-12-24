@@ -39,6 +39,7 @@
 <style lang="scss" scoped>
 .banner {
   position: relative;
+
   .bg {
     width: 100%;
     height: 100%;

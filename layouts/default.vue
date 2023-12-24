@@ -1,6 +1,6 @@
 <template>
   <div class="layout">
-    <nav class="navbar navbar-expand-lg sticky-top bg-body-tertiary">
+    <nav class="navbar navbar-expand-lg fixed-top w-100 bg-body-tertiary">
       <div class="container">
         <NuxtLink to="/" class="navbar-brand">
           <img
@@ -79,6 +79,7 @@
 }
 
 main {
+  margin-top: 4em;
   flex: 1 1 auto;
 }
 
