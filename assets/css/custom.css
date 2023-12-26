@@ -8,3 +8,13 @@
   --bs-link-hover-color: #ff3da4;
   --bs-link-hover-color-rgb: 255, 61, 164;
 }
+
+.btn-primary {
+  background: var(--bs-primary);
+  border-color: var(--bs-primary);
+}
+
+.btn-primary:hover {
+  background: var(--bs-link-hover-color);
+  border-color: var(--bs-link-hover-color);
+}
