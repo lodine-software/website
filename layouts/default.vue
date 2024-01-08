@@ -46,25 +46,31 @@
       </div>
     </nav>
     <main><slot /></main>
-    <footer class="footer bg-body-tertiary pt-1 pb-1">
-      <div class="container d-flex align-items-center justify-content-between">
-        <div class="d-flex gap-2">
+    <footer class="footer bg-body-tertiary">
+      <div class="container d-flex justify-content-between py-2">
+        <div class="d-flex align-items-center gap-2">
           <img
             src="~/assets/images/brand/lettermark.svg"
             height="35"
             alt="Lodine Logo"
-            class="mt-2 pe-none"
+            class="pe-none"
           />
-          <div class="d-flex flex-column">
-            <span
-              >Lodine Software © 2021 - {{ new Date().getFullYear() }}</span
-            >
-            <ul class="d-flex list-unstyled text-secondary gap-1">
-              <li><NuxtLink to="/legal/privacy">Privacy Policy</NuxtLink></li>
-              <span class="user-select-none"> /</span>
-              <li><NuxtLink to="/legal/terms">Terms of Use</NuxtLink></li>
-            </ul>
-          </div>
+          <span>Lodine Software © 2021 - {{ new Date().getFullYear() }}</span>
+        </div>
+        <div class="d-flex align-items-center gap-2">
+          <ul class="d-flex list-unstyled text-secondary gap-1 m-0">
+            <li><NuxtLink to="/legal/privacy">Privacy Policy</NuxtLink></li>
+            <span class="user-select-none"> /</span>
+            <li><NuxtLink to="/legal/terms">Terms of Use</NuxtLink></li>
+            <span class="user-select-none"> /</span>
+            <li>
+              <NuxtLink
+                to="https://lodine.freshdesk.com/support/home"
+                target="_blank"
+                >Customer Support</NuxtLink
+              >
+            </li>
+          </ul>
         </div>
       </div>
     </footer>
@@ -86,6 +92,12 @@ main {
 .footer {
   a {
     text-decoration: none;
+  }
+
+  @media screen and (max-width: 1000px) {
+    .container {
+      flex-direction: column;
+    }
   }
 }
 </style>

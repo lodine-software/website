@@ -1,0 +1,5 @@
+<template>
+  <div class="container">
+    <h1>Frequently Asked Questions</h1>
+  </div>
+</template>
