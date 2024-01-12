@@ -2,12 +2,12 @@ export default defineNuxtConfig({
   app: {
     head: {
       title: "Lodine Software",
-      titleTemplate: "%s / Lodine Software",
+      titleTemplate: "%s - Lodine Software",
       meta: [
         {
           name: "description",
           content:
-            "Official website of Lodine Software. Here you can find trusted information, get in touch with team, get answers to your questions",
+            "Welcome to the official website for Lodine Software! Here you can find trusted information, get in touch with team, get answers to your questions and etc.",
         },
       ],
       link: [

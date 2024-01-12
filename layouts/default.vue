@@ -47,15 +47,9 @@
     </nav>
     <main><slot /></main>
     <footer class="footer bg-body-tertiary">
-      <div class="container d-flex justify-content-between py-2">
-        <div class="d-flex align-items-center gap-2">
-          <img
-            src="~/assets/images/brand/lettermark.svg"
-            height="35"
-            alt="Lodine Logo"
-            class="pe-none"
-          />
-          <span>Lodine Software © 2021 - {{ new Date().getFullYear() }}</span>
+      <div class="container d-flex justify-content-between py-3">
+        <div class="d-flex align-items-center user-select-none gap-2">
+          <span>© Lodine Software 2021 - {{ new Date().getFullYear() }}</span>
         </div>
         <div class="d-flex align-items-center gap-2">
           <ul class="d-flex list-unstyled text-secondary gap-1 m-0">
@@ -73,11 +67,11 @@
 .layout {
   display: flex;
   flex-direction: column;
-  height: 100svh;
+  height: 100dvh;
 }
 
 main {
-  margin-top: 4em;
+  padding-top: 60px;
   flex: 1 1 auto;
 }
 
