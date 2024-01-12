@@ -46,10 +46,12 @@
       </div>
     </nav>
     <main><slot /></main>
-    <footer class="footer bg-body-tertiary">
+    <footer class="footer mt-auto bg-body-tertiary">
       <div class="container d-flex justify-content-between py-3">
         <div class="d-flex align-items-center user-select-none gap-2">
-          <span>© Lodine Software 2021 - {{ new Date().getFullYear() }}</span>
+          <span
+            >Copyright {{ new Date().getFullYear() }} © Lodine Software</span
+          >
         </div>
         <div class="d-flex align-items-center gap-2">
           <ul class="d-flex list-unstyled text-secondary gap-1 m-0">
@@ -72,7 +74,6 @@
 
 main {
   padding-top: 60px;
-  flex: 1 1 auto;
 }
 
 .footer {

@@ -1,18 +1,31 @@
 <template>
-  <div
-    class="banner d-flex align-items-center text-center text-white w-10 h-100"
-  >
-    <img
-      class="bg pe-none user-select-none"
-      src="~/assets/images/landing/landing-bg.webp"
-      alt=""
-    />
-    <div class="inner w-100 py-3">
-      <div class="container">
-        <h1 class="fw-bold">Lodine Software</h1>
-        <h4>A software development company</h4>
-      </div>
-    </div>
+  <PageHero class="mb-3">
+    <h1 class="fw-bold">Lodine Software</h1>
+    <h4>A software development company</h4>
+  </PageHero>
+  <div class="d-flex flex-column gap-3">
+    <section class="container">
+      <h2>About</h2>
+      <p>
+        Lodine Software was founded in the 2021 in the Kazakhstan, we have small
+        but friendly team :)
+      </p>
+    </section>
+    <section class="container">
+      <h2>Our Vision</h2>
+      <p>
+        We want to build non-irritating, beautiful, fast and convenient products
+        for our users!
+      </p>
+    </section>
+    <section class="container">
+      <h2>Main Goal</h2>
+      <p>
+        Our main goal is to create products that are different from others, we
+        do not want to create paid subscriptions, unclear plans, sell personal
+        data, etc., we prefer to create free and open source products.
+      </p>
+    </section>
   </div>
 </template>
 
