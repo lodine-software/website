@@ -60,16 +60,8 @@
         <div class="d-flex align-items-center gap-2">
           <ul class="d-flex list-unstyled text-secondary gap-1 m-0">
             <li><NuxtLink to="/legal/privacy">Privacy Policy</NuxtLink></li>
-            <span class="user-select-none"> /</span>
+            <span class="user-select-none">/</span>
             <li><NuxtLink to="/legal/terms">Terms of Use</NuxtLink></li>
-            <span class="user-select-none"> /</span>
-            <li>
-              <NuxtLink
-                to="https://lodine.freshdesk.com/support/home"
-                target="_blank"
-                >Customer Support</NuxtLink
-              >
-            </li>
           </ul>
         </div>
       </div>
