@@ -1,25 +1,25 @@
 <template>
   <PageHero class="mb-3">
-    <h1 class="fw-bold">Lodine Software</h1>
-    <h4>A software development company</h4>
+    <h1>Lodine Software</h1>
+    <p>A software development company</p>
   </PageHero>
   <div class="d-flex flex-column gap-3">
     <section class="container">
-      <h2>About</h2>
+      <h2>About us</h2>
       <p>
         Lodine Software was founded in the 2021 in the Kazakhstan, we have small
         but friendly team :)
       </p>
     </section>
     <section class="container">
-      <h2>Our Vision</h2>
+      <h2>Our vision</h2>
       <p>
         We want to build non-irritating, beautiful, fast and convenient products
         for our users!
       </p>
     </section>
     <section class="container">
-      <h2>Main Goal</h2>
+      <h2>Main goal</h2>
       <p>
         Our main goal is to create products that are different from others, we
         do not want to create paid subscriptions, unclear plans, sell personal
