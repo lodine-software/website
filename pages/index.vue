@@ -7,8 +7,8 @@
     <section class="container">
       <h2>About us</h2>
       <p>
-        Lodine Software was founded in the 2021 in the Kazakhstan, we have small
-        but friendly team :)
+        Lodine Software was founded in the year of 2021 in the Kazakhstan, we
+        have small but friendly team :)
       </p>
     </section>
     <section class="container">
