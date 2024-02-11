@@ -7,16 +7,16 @@
             <img
               src="~/assets/images/brand/wordmark_monochrome.svg"
               alt=""
-              height="50"
+              height="40"
             />
           </NuxtLink>
         </div>
         <div class="actions">
-          <NuxtLink to="/" class="btn">Home</NuxtLink>
-          <NuxtLink to="/software" class="btn">Software</NuxtLink>
-          <NuxtLink to="/games" class="btn">Games</NuxtLink>
-          <NuxtLink to="/support" class="btn">Support</NuxtLink>
-          <NuxtLink to="/contact" class="btn">Contact</NuxtLink>
+          <NuxtLink to="/" active-class="active">Home</NuxtLink>
+          <NuxtLink to="/software" active-class="active">Software</NuxtLink>
+          <NuxtLink to="/games" active-class="active">Games</NuxtLink>
+          <NuxtLink to="/support" active-class="active">Support</NuxtLink>
+          <NuxtLink to="/contact" active-class="active">Contact</NuxtLink>
         </div>
         <button class="burger">
           <div class="bar"></div>
@@ -24,11 +24,17 @@
       </div>
     </nav>
     <div class="mobile-nav">
-      <NuxtLink to="/" class="btn">Home</NuxtLink>
-      <NuxtLink to="/software" class="btn">Software</NuxtLink>
-      <NuxtLink to="/games" class="btn">Games</NuxtLink>
-      <NuxtLink to="/support" class="btn">Support</NuxtLink>
-      <NuxtLink to="/contact" class="btn">Contact</NuxtLink>
+      <NuxtLink to="/" class="btn" active-class="active">Home</NuxtLink>
+      <NuxtLink to="/software" class="btn" active-class="active"
+        >Software</NuxtLink
+      >
+      <NuxtLink to="/games" class="btn" active-class="active">Games</NuxtLink>
+      <NuxtLink to="/support" class="btn" active-class="active"
+        >Support</NuxtLink
+      >
+      <NuxtLink to="/contact" class="btn" active-class="active"
+        >Contact</NuxtLink
+      >
     </div>
     <main>
       <slot />
@@ -118,10 +124,15 @@ nav {
       gap: 1em;
 
       a {
-        background: transparent;
+        color: #fff;
+        text-decoration: none;
 
         &:hover {
-          background: rgba($color: #fff, $alpha: 0.2);
+          border-bottom: 1px solid #fff;
+        }
+
+        &.active {
+          font-weight: bold;
         }
       }
 
@@ -193,6 +204,10 @@ nav {
     padding: 1em;
 
     &:hover {
+      background: #eeeeee;
+    }
+
+    &.active {
       background: #ccc;
     }
   }

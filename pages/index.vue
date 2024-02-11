@@ -1,21 +1,21 @@
 <template>
   <div class="container">
+    <h1>About us</h1>
     <section>
-      <h2>About us</h2>
       <p>
         Lodine Software was founded in the year of 2021 in the Kazakhstan, we
         have small but friendly team :)
       </p>
     </section>
     <section>
-      <h2>Our vision</h2>
+      <h1>Our vision</h1>
       <p>
         We want to build non-irritating, beautiful, fast and convenient products
         for our users!
       </p>
     </section>
     <section>
-      <h2>Main goal</h2>
+      <h1>Main goal</h1>
       <p>
         Our main goal is to create products that are different from others, we
         do not want to create paid subscriptions, unclear plans, sell personal
