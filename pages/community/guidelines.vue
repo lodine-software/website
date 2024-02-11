@@ -149,5 +149,5 @@
 <script setup>
 useHead({
   title: "Community Guidelines",
-})
+});
 </script>

@@ -102,5 +102,5 @@
 <script setup>
 useHead({
   title: "Privacy Policy",
-})
+});
 </script>
