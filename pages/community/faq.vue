@@ -7,5 +7,5 @@
 <script setup>
 useHead({
   title: "Frequently Asked Questions",
-});
+})
 </script>

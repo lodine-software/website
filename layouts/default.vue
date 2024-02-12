@@ -44,11 +44,11 @@
         <div class="cols">
           <div class="col">
             <span class="title">Software</span>
-            <span>Fill this space!</span>
+            <span>Nothing...</span>
           </div>
           <div class="col">
             <span class="title">Games</span>
-            <span>Fill this space!</span>
+            <span>Nothing...</span>
           </div>
           <div class="col">
             <span class="title">Community</span>
@@ -99,7 +99,8 @@
 
 nav {
   top: 0;
-  position: sticky;
+  width: 100%;
+  position: fixed;
   display: flex;
   justify-content: center;
   background: linear-gradient(180deg, #f08, rgb(172, 2, 92));
@@ -218,6 +219,7 @@ main {
   flex-direction: column;
   align-items: center;
   flex: 1 auto;
+  margin-top: 64px;
 }
 
 footer {
@@ -235,21 +237,43 @@ footer {
     .cols {
       display: flex;
       justify-content: space-between;
+      gap: 1em;
+
+      @media (max-width: 800px) {
+        flex-direction: column;
+      }
 
       .col {
         display: flex;
         flex-direction: column;
         gap: 0.3em;
 
+        @media (max-width: 800px) {
+          gap: 0;
+        }
+
         .title {
           font-weight: bold;
           text-transform: uppercase;
           font-size: 1.1em;
+
+          @media (max-width: 800px) {
+            padding: 1em;
+          }
         }
 
-        a {
+        *:not(.title) {
           text-decoration: none;
           color: inherit;
+
+          @media (max-width: 800px) {
+            width: 100%;
+            padding: 1em;
+
+            &:hover {
+              background: rgba($color: #fff, $alpha: 0.5);
+            }
+          }
 
           &:hover {
             opacity: 0.8;
@@ -275,6 +299,11 @@ footer {
           img {
             width: 1.3em;
             height: 1.3em;
+
+            @media (max-width: 800px) {
+              width: 1.7em;
+              height: 1.7em;
+            }
           }
         }
       }
@@ -285,12 +314,12 @@ footer {
 
 <script setup>
 onMounted(() => {
-  const menu_btn = document.querySelector(".burger");
-  const mob_nav = document.querySelector(".mobile-nav");
+  const menu_btn = document.querySelector(".burger")
+  const mob_nav = document.querySelector(".mobile-nav")
 
   menu_btn.addEventListener("click", function () {
-    menu_btn.classList.toggle("is-active");
-    mob_nav.classList.toggle("is-active");
-  });
-});
+    menu_btn.classList.toggle("is-active")
+    mob_nav.classList.toggle("is-active")
+  })
+})
 </script>

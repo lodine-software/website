@@ -22,5 +22,5 @@ useSeoMeta({
   title: "Contact",
   description:
     "Need help using Lodine Software? Contact our dedicated support team via email for troubleshooting, product insights, and more.",
-});
+})
 </script>

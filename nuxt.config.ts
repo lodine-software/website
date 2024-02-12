@@ -16,4 +16,4 @@ export default defineNuxtConfig({
       "JetBrains+Mono": true,
     },
   },
-});
+})

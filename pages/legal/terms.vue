@@ -70,5 +70,5 @@
 <script setup>
 useHead({
   title: "Terms of Use",
-});
+})
 </script>
