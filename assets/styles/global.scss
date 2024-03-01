@@ -24,9 +24,29 @@ body {
   color: #fff;
   text-decoration: none;
   padding: 0.5em 1em;
+  font-size: 1em;
+  appearance: none;
+  border: none;
   cursor: pointer;
 
   &:hover {
     background: #b90063;
+  }
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 0 10px #b4b4b4;
+  gap: 0.3em;
+  padding: 1em;
+
+  .title {
+    font-size: 1.3em;
+  }
+
+  details {
+    display: flex;
+    flex-direction: column;
   }
 }
