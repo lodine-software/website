@@ -15,7 +15,6 @@
           <NuxtLink to="/" active-class="active">Home</NuxtLink>
           <NuxtLink to="/software" active-class="active">Software</NuxtLink>
           <NuxtLink to="/games" active-class="active">Games</NuxtLink>
-          <NuxtLink to="/support" active-class="active">Support</NuxtLink>
           <NuxtLink to="/contact" active-class="active">Contact</NuxtLink>
         </div>
         <button class="burger">
@@ -29,9 +28,6 @@
         >Software</NuxtLink
       >
       <NuxtLink to="/games" class="btn" active-class="active">Games</NuxtLink>
-      <NuxtLink to="/support" class="btn" active-class="active"
-        >Support</NuxtLink
-      >
       <NuxtLink to="/contact" class="btn" active-class="active"
         >Contact</NuxtLink
       >
