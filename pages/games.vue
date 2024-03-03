@@ -1,26 +1,34 @@
 <template>
   <div class="container">
     <h1>Games</h1>
-    <div v-for="product in JSON.parse(data)" class="card">
-      <span class="title">
-        {{ product.title }} ({{ product.date_of_release }})
-      </span>
-      <span class="description">
-        {{ product.description }}
-      </span>
-      <details>
-        <summary>More...</summary>
-        <span>Developed by {{ product.developer }}</span>
-        <span>Published by {{ product.publisher }}</span>
-      </details>
-      <span
-        ><a :href="product.website" target="_blank" class="btn"
-          >Download</a
-        ></span
-      >
-    </div>
+    <template v-for="product in JSON.parse(data)">
+      <div class="card" v-if="product.visibility == 'visible'">
+        <span class="title">
+          {{ product.title }} ({{ product.date_of_release }})
+        </span>
+        <span class="description">
+          {{ product.description }}
+        </span>
+        <details>
+          <summary>More...</summary>
+          <span>Developed by {{ product.developer }}</span>
+          <span>Published by {{ product.publisher }}</span>
+        </details>
+        <span
+          ><a :href="product.website" target="_blank" class="btn"
+            >Download</a
+          ></span
+        >
+      </div>
+    </template>
   </div>
 </template>
+
+<style lang="scss">
+.container {
+  padding-bottom: 1em;
+}
+</style>
 
 <script setup>
 const { data } = await useFetch(
