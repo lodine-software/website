@@ -9,7 +9,7 @@ export default defineNuxtConfig({
     },
   },
   css: ["~/assets/styles/global.scss"],
-  modules: ["@nuxtjs/google-fonts"],
+  modules: ["@nuxtjs/google-fonts", "nuxt-security"],
   googleFonts: {
     families: {
       "Noto+Sans": true,
