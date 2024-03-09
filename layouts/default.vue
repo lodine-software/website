@@ -39,12 +39,18 @@
       <div class="inner">
         <div class="cols">
           <div class="col">
-            <span class="title">Software</span>
-            <span>Nothing...</span>
+            <span class="title">Index</span>
+            <NuxtLink to="/">Home</NuxtLink>
+            <NuxtLink to="/software">Software</NuxtLink>
+            <NuxtLink to="/games">Games</NuxtLink>
+            <NuxtLink to="/contact">Contact</NuxtLink>
           </div>
           <div class="col">
-            <span class="title">Games</span>
-            <span>Nothing...</span>
+            <span class="title">Support</span>
+            <NuxtLink to="https://lodine.freshdesk.com/" target="_blank"
+              >Fill a Ticket</NuxtLink
+            >
+            <NuxtLink to="/contact">Contact Us</NuxtLink>
           </div>
           <div class="col">
             <span class="title">Community</span>
@@ -233,7 +239,10 @@ footer {
     .cols {
       display: flex;
       justify-content: space-between;
+      text-align: center;
       gap: 1em;
+      padding-bottom: 1em;
+      border-bottom: 1px #868686 solid;
 
       @media (max-width: 800px) {
         flex-direction: column;
@@ -281,24 +290,32 @@ footer {
     .row {
       display: flex;
       justify-content: space-between;
+      align-items: center;
 
       .social-media {
         display: flex;
-        gap: 1em;
+        gap: 0.5em;
 
         a {
-          &:hover {
-            transform: scale(1.3);
-          }
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background: #fff;
+          border: 1px #868686 solid;
+          padding: 0.5em;
           transition: 200ms;
+
+          &:hover {
+            background: rgba($color: #fff, $alpha: 0.5);
+          }
 
           img {
             width: 1.3em;
             height: 1.3em;
 
             @media (max-width: 800px) {
-              width: 1.7em;
-              height: 1.7em;
+              width: 1.5em;
+              height: 1.5em;
             }
           }
         }
