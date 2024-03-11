@@ -17,7 +17,7 @@
           <NuxtLink to="/games" active-class="active">Games</NuxtLink>
           <NuxtLink to="/contact" active-class="active">Contact</NuxtLink>
         </div>
-        <button class="burger">
+        <button class="burger" @click="burgerClick">
           <div class="bar"></div>
         </button>
       </div>
@@ -149,7 +149,6 @@ nav {
       background: none;
       outline: none;
       border: none;
-      z-index: 99999;
 
       @media (min-width: 800px) {
         display: none;
@@ -185,7 +184,7 @@ nav {
 .mobile-nav {
   position: fixed;
   top: 0;
-  opacity: 0;
+  left: -100%;
   width: 100%;
   min-height: 100vh;
   display: flex;
@@ -193,12 +192,10 @@ nav {
   background: #fff;
   padding-top: 80px;
   transition: 200ms;
-  visibility: hidden;
   gap: 1em;
 
   &.is-active {
-    opacity: 1;
-    visibility: visible;
+    left: 0;
   }
 
   a {
@@ -328,13 +325,11 @@ footer {
 </style>
 
 <script setup>
-onMounted(() => {
+function burgerClick() {
   const menu_btn = document.querySelector(".burger")
   const mob_nav = document.querySelector(".mobile-nav")
 
-  menu_btn.addEventListener("click", function () {
-    menu_btn.classList.toggle("is-active")
-    mob_nav.classList.toggle("is-active")
-  })
-})
+  menu_btn.classList.toggle("is-active")
+  mob_nav.classList.toggle("is-active")
+}
 </script>
