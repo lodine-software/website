@@ -149,6 +149,7 @@ nav {
       background: none;
       outline: none;
       border: none;
+      z-index: 99999;
 
       @media (min-width: 800px) {
         display: none;
