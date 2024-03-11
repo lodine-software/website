@@ -23,14 +23,10 @@
       </div>
     </nav>
     <div class="mobile-nav">
-      <NuxtLink to="/" class="btn" active-class="active">Home</NuxtLink>
-      <NuxtLink to="/software" class="btn" active-class="active"
-        >Software</NuxtLink
-      >
-      <NuxtLink to="/games" class="btn" active-class="active">Games</NuxtLink>
-      <NuxtLink to="/contact" class="btn" active-class="active"
-        >Contact</NuxtLink
-      >
+      <NuxtLink to="/" active-class="active">Home</NuxtLink>
+      <NuxtLink to="/software" active-class="active">Software</NuxtLink>
+      <NuxtLink to="/games" active-class="active">Games</NuxtLink>
+      <NuxtLink to="/contact" active-class="active">Contact</NuxtLink>
     </div>
     <main>
       <slot />
@@ -196,6 +192,7 @@ nav {
   background: #fff;
   padding-top: 80px;
   transition: 200ms;
+  gap: 1em;
 
   &.is-active {
     left: 0;
@@ -205,6 +202,8 @@ nav {
     background: #fff;
     color: #000;
     padding: 1em;
+    text-decoration: none;
+    text-align: center;
 
     &:hover {
       background: #eeeeee;
