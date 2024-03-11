@@ -184,7 +184,7 @@ nav {
 .mobile-nav {
   position: fixed;
   top: 0;
-  left: -100%;
+  opacity: 0;
   width: 100%;
   min-height: 100vh;
   display: flex;
@@ -192,10 +192,12 @@ nav {
   background: #fff;
   padding-top: 80px;
   transition: 200ms;
+  visibility: hidden;
   gap: 1em;
 
   &.is-active {
-    left: 0;
+    opacity: 1;
+    visibility: visible;
   }
 
   a {
