@@ -43,8 +43,8 @@
           </div>
           <div class="col">
             <span class="title">Support</span>
-            <NuxtLink to="https://lodine.freshdesk.com/" target="_blank"
-              >Fill a Ticket</NuxtLink
+            <ExternalLink to="https://lodine.freshdesk.com/"
+              >Fill a Ticket</ExternalLink
             >
             <NuxtLink to="/contact">Contact Us</NuxtLink>
           </div>
@@ -66,21 +66,21 @@
             >
           </div>
           <div class="social-media">
-            <NuxtLink to="https://go.lodine.xyz/discord" target="_blank">
-              <img src="~/assets/icons/discord.svg" alt="" />
-            </NuxtLink>
-            <NuxtLink to="https://go.lodine.xyz/github" target="_blank">
-              <img src="~/assets/icons/github.svg" alt="" />
-            </NuxtLink>
-            <NuxtLink to="https://go.lodine.xyz/instagram" target="_blank">
-              <img src="~/assets/icons/instagram.svg" alt="" />
-            </NuxtLink>
-            <NuxtLink to="https://go.lodine.xyz/itch" target="_blank">
-              <img src="~/assets/icons/itchdotio.svg" alt="" />
-            </NuxtLink>
-            <NuxtLink to="https://go.lodine.xyz/twitter" target="_blank">
-              <img src="~/assets/icons/x.svg" alt="" />
-            </NuxtLink>
+            <ExternalLink to="https://go.lodine.xyz/discord">
+              <img src="~/assets/images/social/discord.svg" alt="" />
+            </ExternalLink>
+            <ExternalLink to="https://go.lodine.xyz/github">
+              <img src="~/assets/images/social/github.svg" alt="" />
+            </ExternalLink>
+            <ExternalLink to="https://go.lodine.xyz/instagram">
+              <img src="~/assets/images/social/instagram.svg" alt="" />
+            </ExternalLink>
+            <ExternalLink to="https://go.lodine.xyz/itch">
+              <img src="~/assets/images/social/itchdotio.svg" alt="" />
+            </ExternalLink>
+            <ExternalLink to="https://go.lodine.xyz/twitter">
+              <img src="~/assets/images/social/x.svg" alt="" />
+            </ExternalLink>
           </div>
         </div>
       </div>
@@ -262,7 +262,7 @@ footer {
           font-size: 1.1em;
 
           @media (max-width: 800px) {
-            padding: 1em;
+            padding: 0.3em;
           }
         }
 
@@ -272,7 +272,7 @@ footer {
 
           @media (max-width: 800px) {
             width: 100%;
-            padding: 1em;
+            padding: 0.5em;
 
             &:hover {
               background: rgba($color: #fff, $alpha: 0.5);

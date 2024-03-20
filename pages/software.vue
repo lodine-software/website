@@ -9,10 +9,6 @@
         <span class="description">
           {{ product.description }}
         </span>
-        <details>
-          <summary>More...</summary>
-          <span>Developed by {{ product.developer }}</span>
-        </details>
         <span
           ><a :href="product.website" target="_blank" class="btn"
             >Download</a
@@ -23,9 +19,15 @@
   </div>
 </template>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .container {
   padding-bottom: 1em;
+}
+
+.card {
+  .btn {
+    margin-top: 0.3em;
+  }
 }
 </style>
 
