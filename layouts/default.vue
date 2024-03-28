@@ -193,6 +193,7 @@ nav {
   padding-top: 80px;
   transition: 200ms;
   gap: 1em;
+  z-index: 9998;
 
   &.is-active {
     left: 0;

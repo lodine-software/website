@@ -1,21 +1,21 @@
 <template>
   <div class="container">
     <h1>Games</h1>
-    <template v-for="product in JSON.parse(data)">
-      <div class="card" v-if="product.visibility == 'visible'">
-        <span class="title">
-          {{ product.title }} ({{ product.date_of_release }})
-        </span>
-        <span class="description">
-          {{ product.description }}
-        </span>
-        <span
-          ><a :href="product.website" target="_blank" class="btn"
-            >Download</a
-          ></span
-        >
-      </div>
-    </template>
+    <section class="content">
+      <template v-for="product in JSON.parse(data)">
+        <div class="game_card" v-if="product.visibility == 'visible'">
+          <ExternalLink :to="product.website">
+            <img :src="product.img_card" :alt="product.slug" />
+            <div class="overlay">
+              <span>{{ product.title }}</span>
+              <p>{{ product.description }}</p>
+              <p>Release Date: {{ product.date_of_release }}</p>
+              <p>Developer: {{ product.developer }}</p>
+            </div></ExternalLink
+          >
+        </div>
+      </template>
+    </section>
   </div>
 </template>
 
@@ -24,9 +24,49 @@
   padding-bottom: 1em;
 }
 
-.card {
-  .btn {
-    margin-top: 0.3em;
+.content {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+}
+
+.game_card {
+  position: relative;
+  display: inline-block;
+  width: 213px;
+  text-align: center;
+  margin-bottom: 1em;
+  box-shadow: 0 0 12px;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  &:hover .overlay {
+    height: 100%;
+
+    p {
+      display: block;
+    }
+  }
+
+  .overlay {
+    position: absolute;
+    width: 100%;
+    transition: 200ms;
+    bottom: 0;
+    color: #fff;
+    padding: 0.3em;
+    backdrop-filter: blur(15px);
+    background: rgba($color: #000, $alpha: 0.6);
+    overflow: hidden;
+
+    p {
+      margin: 0;
+      font-size: 0.8em;
+      display: none;
+    }
   }
 }
 </style>
