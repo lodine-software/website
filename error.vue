@@ -9,6 +9,10 @@
 
 <script setup>
 const error = useError()
+
+useHead({
+  title: error.value.statusMessage,
+})
 </script>
 
 <style lang="scss" scoped>
