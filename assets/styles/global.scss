@@ -17,6 +17,7 @@ body {
 }
 
 .btn {
+  position: relative;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -30,8 +31,16 @@ body {
   cursor: pointer;
 
   &:hover {
-    background: #b90063;
+    filter: brightness(0.9);
   }
+}
+
+.btn.secondary {
+  color: #f08;
+  background: transparent;
+  box-shadow:
+    1px 1px 0 #f08 inset,
+    -1px -1px 0 #f08 inset;
 }
 
 .card {
