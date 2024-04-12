@@ -22,25 +22,52 @@ body {
   align-items: center;
   justify-content: center;
   background: #f08;
+  border: 1px transparent solid;
   color: #fff;
   text-decoration: none;
   padding: 0.5em 1em;
   font-size: 1em;
   appearance: none;
-  border: none;
+  width: fit-content;
   cursor: pointer;
 
   &:hover {
-    filter: brightness(0.9);
+    box-shadow: 0 0 15px rgba($color: #000, $alpha: 0.5) inset;
   }
 }
 
 .btn.secondary {
   color: #f08;
   background: transparent;
-  box-shadow:
-    1px 1px 0 #f08 inset,
-    -1px -1px 0 #f08 inset;
+  border: 1px #f08 solid;
+}
+
+.dropdown {
+  border: 1px #b4b4b4 solid;
+  background: #e9e9e9;
+  text-decoration: none;
+  padding: 0.5em 1em;
+  font-size: 1em;
+  width: fit-content;
+  cursor: pointer;
+}
+
+.input-field {
+  border: 1px #b4b4b4 solid;
+  background: #e9e9e9;
+  text-decoration: none;
+  padding: 0.5em 1em;
+  font-size: 1em;
+  width: fit-content;
+}
+
+.text-field {
+  border: 1px #b4b4b4 solid;
+  background: #e9e9e9;
+  text-decoration: none;
+  padding: 0.5em 1em;
+  font-size: 1em;
+  resize: none;
 }
 
 .card {
