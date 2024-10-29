@@ -9,12 +9,16 @@ export default defineNuxtConfig({
       ],
     },
   },
+
   css: ["~/assets/styles/global.scss"],
   modules: ["@nuxtjs/google-fonts"],
+
   googleFonts: {
     families: {
       "Noto+Sans": true,
       "JetBrains+Mono": true,
     },
   },
+
+  compatibilityDate: "2024-10-29",
 })

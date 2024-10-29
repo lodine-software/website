@@ -72,14 +72,11 @@
             <ExternalLink to="https://go.lodine.xyz/github">
               <img src="~/assets/images/social/github.svg" alt="" />
             </ExternalLink>
-            <ExternalLink to="https://go.lodine.xyz/instagram">
-              <img src="~/assets/images/social/instagram.svg" alt="" />
-            </ExternalLink>
             <ExternalLink to="https://go.lodine.xyz/itch">
               <img src="~/assets/images/social/itchdotio.svg" alt="" />
             </ExternalLink>
-            <ExternalLink to="https://go.lodine.xyz/twitter">
-              <img src="~/assets/images/social/x.svg" alt="" />
+            <ExternalLink to="https://go.lodine.xyz/bluesky">
+              <img src="~/assets/images/social/bluesky.svg" alt="" />
             </ExternalLink>
           </div>
         </div>
@@ -125,10 +122,6 @@ nav {
       a {
         color: #fff;
         text-decoration: none;
-
-        &:hover {
-          border-bottom: 1px solid #fff;
-        }
 
         &.active {
           font-weight: bold;
